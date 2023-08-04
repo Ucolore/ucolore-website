@@ -6,8 +6,9 @@ $grid-gutter-width: 40px;
 $border-radius-base:  4px;
 $padding-base-vertical: 14px;
 
-$brand-primary: #7ED321;
-$brand-secondary: #118DF0; 
+$brand-primary: #695aa6;
+$brand-primary-400: #897cbb;
+$brand-secondary: #118DF0;
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -344,6 +345,7 @@ h1, h2, h3, h4, h5, h6, figure {
 				&.active {
 					> a {
 						color: $brand-primary!important;
+
 					}
 				}
 				&.btn-cta {
@@ -354,6 +356,12 @@ h1, h2, h3, h4, h5, h6, figure {
 							background: $brand-primary;
 							padding: 4px 20px;
 							color: $brand-white;
+						}
+						&:hover {
+							span {
+								background: lighten($brand-primary-400, 5%);
+								color: $brand-white;
+							}
 						}
 					}
 				}
