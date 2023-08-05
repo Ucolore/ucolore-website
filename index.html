@@ -44,6 +44,10 @@
         function sendMessage() {
             window.open('mailto:ucolore.joaquim@gmail.com?subject=' + document.getElementById('name') + '&body=' + document.getElementById('message'));
         }
+        function download_cv() {
+            window.open('https://drive.google.com/file/d/1oS7iCqn0J5Kd4rAF6G1tXdxMeQL9pLjV/view?usp=sharing');
+        }
+
     </script>
 </head>
 <body>
@@ -122,7 +126,7 @@
                         compromisso inabalável com a qualidade,
                         sou a escolha certa para enfrentar desafios de engenharia de software com confiança e
                         excelência.</p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Baixar CV</button>
+                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="download_cv()">Baixar CV</button>
                 </div>
             </div>
         </div>
